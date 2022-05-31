@@ -1,6 +1,6 @@
 export const personalInfo = {
     name: "¡Hola! soy Agustín Gómez Urrutia",
-    career: "Soy ingeniero industrial y debido a la pandemia decidí estudiar programación web. Realicé un curso de 6 meses en programación web fullstack en Rolling Code School. Además realicé un acelerado en ReactJS de 10 semanas en Alkemy, en donde simulamos un ambiente real de trabajo para realizar el front de una ONG ficticia.",
+    career: "Soy ingeniero industrial y debido a mi curiosidad y las ganas de seguir capacitándome en las tecnologías demandadas hoy en día, decidí estudiar programación. Por lo cual realicé un curso de 6 meses en programación web fullstack en Rolling Code School. Además pude aplicar al acelerado en ReactJS de 10 semanas en Alkemy, en donde simulamos un ambiente real de trabajo para realizar el front de una ONG ficticia.",
     selfDescription: " Me considero una persona que trabaja en equipo, responsable, honesta y con muchas ganas de seguir aprendiendo sobre el mundo de la programación.",
     present: "Actualmente me encuentro desempeñando como responsable de distribución en una multinacional de transporte de gases y me encuentro en la búsqueda de mi primer trabajo IT.",
 

@@ -12,11 +12,13 @@ import ProyectoMoviePop from './components/ProyectoMoviePop';
 import { projectAMD, projectMoviePop, projectHeroTeam, projectAppleRollTech } from './helpers/projectsDescription';
 import { personalInfo, icons } from "./helpers/personalInfo"
 import ScrollToTopButton from './components/ScrollToTopButton';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <div className="App">
       <NavBar key="navbar" />
+      <ScrollToTop></ScrollToTop>
       <Routes>
         <Route path="/" element={<PersonalPresentation key="personalPresentation" personalInfo={personalInfo} icons={icons} />} />
         <Route path="portfolio" exact element={<Portfolio key="portfolio" />} />

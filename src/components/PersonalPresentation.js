@@ -16,9 +16,9 @@ export default function PersonalPresentation({ personalInfo, icons }) {
         <div className='presentationContainer'>
             <Container sx={{ textAlign: "center", padding: 3 }}>
                 <h1>{name}</h1>
-                <h3>{career}</h3>
-                <h3>{selfDescription}</h3>
-                <h3>{present}</h3>
+                <h3 className='presentationTitle'>{career}</h3>
+                <h3 className='presentationTitle'>{selfDescription}</h3>
+                <h3 className='presentationTitle'>{present}</h3>
             </Container>
             <Container>
                 <h2 style={{ marginTop: "3rem", fontWeight: 700 }}>Hard Skills</h2>

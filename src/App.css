@@ -6,6 +6,8 @@ li {
   list-style-type: circle;
 }
 
+/* ProjectCard CSS */
+
 .moreInfoLink {
   text-decoration: none;
   color: white;
@@ -15,6 +17,8 @@ li {
   text-decoration: none;
   color: white;
 }
+
+/* Navbar CSS */
 
 .navLinks {
   text-decoration: none;
@@ -26,15 +30,34 @@ li {
   color: white;
 }
 
-.boton {
+.navbutton {
   font-size: 1.2rem;
   margin: 0;
 }
+
+.navLinksDrawer {
+  text-decoration: none;
+  margin-right: 1rem;
+  color: black;
+}
+
+.navLinksDrawer:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* Presentation CSS */
 
 .presentationContainer {
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
+
+.presentationTitle {
+  text-align: justify;
+}
+
+/* Footer CSS */
 
 .efsetLink {
   text-decoration: none;
@@ -72,19 +95,11 @@ li {
   color: #f66b0e;
 }
 
+/* ScrollToTop Button CSS */
+
 .upButton {
   position: sticky;
   text-align: end;
+  margin-right: 20px;
   bottom: 0;
-}
-
-.navLinksDrawer {
-  text-decoration: none;
-  margin-right: 1rem;
-  color: black;
-}
-
-.navLinksDrawer:visited {
-  text-decoration: none;
-  color: black;
 }

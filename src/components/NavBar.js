@@ -18,6 +18,11 @@ export default function ButtonAppBar() {
 
     const [open, setOpen] = React.useState(false)
 
+    const navButtons = [
+        { link: "ABOUT", href: "/" },
+        { link: "PORTFOLIO", href: "portfolio" },
+        { link: "RESUME", href: "resume" }]
+
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static" style={{ backgroundColor: "#293B5F" }}>
@@ -27,27 +32,15 @@ export default function ButtonAppBar() {
                         <MenuIcon onClick={() => setOpen(true)} />
                     </IconButton>
                     <Box sx={{ display: { xs: "none", sm: "block", md: "block", lg: "block", xl: "block" } }}>
-                        <Link className='navLinks' to="/">
-                            <Button sx={{ color: "white" }} size="small" >
-                                <p className='boton'>
-                                    About
-                                </p>
-                            </Button>
-                        </Link>
-                        <Link className='navLinks' to="portfolio">
-                            <Button sx={{ color: "white" }} size="small">
-                                <p className='boton'>
-                                    Portfolio
-                                </p>
-                            </Button>
-                        </Link>
-                        <Link className='navLinks' to="resume">
-                            <Button sx={{ color: "white" }} size="small">
-                                <p className='boton'>
-                                    Resume
-                                </p>
-                            </Button>
-                        </Link>
+                        {navButtons.map((navButton) => (
+                            <Link className='navLinks' to={`${navButton.href}`}>
+                                <Button sx={{ color: "white" }} size="small" >
+                                    <p className='navbutton'>
+                                        {navButton.link}
+                                    </p>
+                                </Button>
+                            </Link>
+                        ))}
                     </Box>
                 </Toolbar>
                 <SwipeableDrawer anchor='right' open={open} onOpen={() => setOpen(true)} onClose={() => setOpen(false)}>
@@ -58,21 +51,13 @@ export default function ButtonAppBar() {
                     </div>
                     <Divider />
                     <List>
-                        <ListItem>
-                            <Link className='navLinksDrawer' sx={{ color: "black" }} to="/" onClick={() => setOpen(false)}>
-                                ABOUT
-                            </Link>
-                        </ListItem>
-                        <ListItem>
-                            <Link className='navLinksDrawer' to="portfolio" onClick={() => setOpen(false)}>
-                                PORTFOLIO
-                            </Link>
-                        </ListItem>
-                        <ListItem>
-                            <Link className='navLinksDrawer' to="resume" onClick={() => setOpen(false)}>
-                                RESUME
-                            </Link>
-                        </ListItem>
+                        {navButtons.map((navButton) => (
+                            <ListItem>
+                                <Link className='navLinksDrawer' to={`${navButton.href}`} onClick={() => setOpen(false)}>
+                                    {navButton.link}
+                                </Link>
+                            </ListItem>
+                        ))}
                     </List>
                 </SwipeableDrawer>
             </AppBar>
