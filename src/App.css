@@ -77,3 +77,14 @@ li {
   text-align: end;
   bottom: 0;
 }
+
+.navLinksDrawer {
+  text-decoration: none;
+  margin-right: 1rem;
+  color: black;
+}
+
+.navLinksDrawer:visited {
+  text-decoration: none;
+  color: black;
+}
